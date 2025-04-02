@@ -1,0 +1,19 @@
+/* Content.css */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content p {
+  color: #222222;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .content p {
+    font-size: 14px;
+  }
+}

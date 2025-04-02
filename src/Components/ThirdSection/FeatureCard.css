@@ -1,0 +1,48 @@
+/* FeatureCard.css */
+.feature-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  width: 280px;
+  height: auto;
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card.red {
+  background: #ff5757;
+}
+
+.feature-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff5757;
+  margin: 0 0 12px 0;
+}
+
+.feature-card p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Red card text colors */
+.feature-card.red h3,
+.feature-card.red p {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .feature-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}

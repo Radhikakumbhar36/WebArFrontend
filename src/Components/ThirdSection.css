@@ -1,0 +1,211 @@
+/* ThirdSection.css */
+.third {
+  width: 100%;
+  padding: 60px 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.heading-third {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heading-third h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+.heading-third p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #222222;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.third-content {
+  display: flex;
+  height: auto;
+  min-height: 580px;
+  position: relative;
+}
+
+.left-third {
+  width: 40%;
+  position: relative;
+}
+
+.middle-third {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-third {
+  width: 40%;
+  position: relative;
+}
+
+.mobile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.mobile-image {
+  max-width: 100%;
+  max-height: 580px;
+  object-fit: contain;
+  z-index: 10;
+}
+
+/* Feature card containers */
+.feature-container {
+  position: absolute;
+  width: 280px;
+}
+
+/* Positioning for feature cards */
+.top-left {
+  top: 120px;
+  right: 20px;
+}
+
+.bottom-left {
+  bottom: 120px;
+  right: 20px;
+}
+
+.top-right {
+  top: 120px;
+  left: 20px;
+}
+
+.bottom-right {
+  bottom: 120px;
+  left: 20px;
+}
+
+/* Arrow images */
+.arrow {
+  position: absolute;
+  width: 60px;
+  height: auto;
+  z-index: 1;
+}
+
+.left-up-arrow {
+  top: 50%;
+  left: 100%;
+}
+
+.left-down-arrow {
+  top: 30%;
+  left: 100%;
+}
+
+.right-up-arrow {
+  top: 50%;
+  right: 100%;
+}
+
+.right-down-arrow {
+  top: 30%;
+  right: 100%;
+}
+
+.third-footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .top-left, .bottom-left {
+    right: 0;
+  }
+  
+  .top-right, .bottom-right {
+    left: 0;
+  }
+  
+  .arrow {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .third-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left-third, .middle-third, .right-third {
+    width: 100%;
+    position: static;
+    margin-bottom: 30px;
+  }
+  
+  .mobile-container {
+    order: -1;
+    margin: 30px 0 50px;
+  }
+  
+  .feature-container {
+    position: static;
+    margin: 20px auto;
+    width: 280px;
+  }
+  
+  .arrow {
+    display: none;
+  }
+}
+
+/* Mobile view specific styling as shown in your design */
+@media screen and (max-width: 768px) {
+  .third {
+    padding: 40px 0;
+  }
+  
+  .heading-third h1 {
+    font-size: 28px;
+  }
+  
+  .heading-third p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  
+  .third-content {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  
+  .mobile-container {
+    margin: 30px auto;
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .feature-container {
+    position: static;
+    width: 100%;
+    max-width: 320px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .third-footer {
+    padding: 0 20px;
+  }
+}

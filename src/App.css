@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.Main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.main {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    max-width: 1350px;
+    background-color: white;
+}
+
+/* App.css - Mobile */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .Main {
+        background-color: white;
+    }
+    
+    .main {
+        width: 100%;
+        max-width: 100%;
+        background-color: white;
+    }
+}

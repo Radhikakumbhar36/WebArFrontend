@@ -85,7 +85,7 @@
       position: relative;
       width: 60vw;
       height: 60vw;
-      right: 5%;
+      left:-2%;
       z-index: 2;
   }
 
@@ -104,7 +104,7 @@
   }
 
   .small.bottom {
-      right: -5%;
+      right: -10%;
       top: 50%;
       transform: translateY(-50%);
       left: auto;

@@ -135,6 +135,21 @@
     .right-third {
       width: 100%;
     }
+
+    .heading-third{
+      width:100vw;
+      margin-top:5vh;
+    }
+    .heading-third h1{
+      font-size: 1.5rem;
+      text-align: center;
+      margin-left: 0%;
+    }
+
+    .heading-third p{
+      font-size: 0.8rem;
+      margin-left: 5vw;
+    }
     
     .feature-container {
       position: static;
@@ -144,5 +159,20 @@
     
     .arrow {
       display: none;
+    }
+
+    .mobile-image{
+      width:50%;
+      height: 50%;
+    }
+
+    .feature-container.bottom-left{
+      position: relative;
+      left: 45%;
+    }
+
+    .feature-container.bottom-right{
+      position: relative;
+      left:25%;
     }
   }

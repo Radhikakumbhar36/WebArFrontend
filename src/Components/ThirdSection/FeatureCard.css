@@ -42,7 +42,19 @@
 
 @media screen and (max-width: 768px) {
   .feature-card {
-    width: 100%;
+    width: 60%;
+    height: 30%;
     max-width: 320px;
   }
+
+  .feature-card.red {
+    width:40%;
+    height: 30%;
+    max-width: 320px;
+  }
+
+  .feature-card h3,
+.feature-card p {
+  font-size: 0.75rem;
+}
 }

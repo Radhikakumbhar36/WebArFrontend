@@ -2,35 +2,55 @@
 .feature-card {
   background: #ffffff;
   border-radius: 12px;
-  padding: 16px 20px;
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid #eee;
   width: 280px;
-  height: auto;
+  min-height: 150px;
   text-align: left;
-  transition: transform 0.2s ease-in-out;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .feature-card.red {
   background: #ff5757;
 }
 
+.feature-icon {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
 .feature-card h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #ff5757;
   margin: 0 0 12px 0;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.feature-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: currentColor;
 }
 
 .feature-card p {
   font-size: 14px;
   font-weight: 400;
   color: #333333;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -40,21 +60,23 @@
   color: #ffffff;
 }
 
+.feature-card.red h3::after {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 @media screen and (max-width: 768px) {
   .feature-card {
-    width: 60%;
-    height: 30%;
+    width: calc(100% - 32px);
     max-width: 320px;
+    min-height: 120px;
+    margin: 8px auto;
   }
 
-  .feature-card.red {
-    width:40%;
-    height: 30%;
-    max-width: 320px;
+  .feature-card h3 {
+    font-size: 16px;
   }
-
-  .feature-card h3,
-.feature-card p {
-  font-size: 0.75rem;
-}
+  
+  .feature-card p {
+    font-size: 13px;
+  }
 }

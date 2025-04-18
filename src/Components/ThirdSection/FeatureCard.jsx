@@ -1,17 +1,21 @@
-// FeatureCard.jsx
 import React from 'react';
 import './FeatureCard.css';
 
-const FeatureCard = ({ type = 'light' }) => {
-  const cardClassName = type === 'red' ? 'feature-card red' : 'feature-card';
+const FeatureCard = ({ 
+  type = 'light',
+  title,
+  description,
+  icon = null // Optional icon prop
+}) => {
+  const cardClassName = `feature-card ${type} ${!icon ? 'no-icon' : ''}`;
   
   return (
     <div className={cardClassName}>
-      <h3>Search & Discover :</h3>
-      <p>
-        Instantly find your favorite dishes using a smart search bar with voice
-        input for quick access.
-      </p>
+      {icon && <div className="feature-icon">{icon}</div>}
+      <div className="feature-content">
+        <h3 className="feature-title">{title}</h3>
+        <p className="feature-description">{description}</p>
+      </div>
     </div>
   );
 };

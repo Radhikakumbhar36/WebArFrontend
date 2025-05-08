@@ -2,11 +2,7 @@ import React from 'react';
 import './ThirdSection.css';
 import FeatureCard from '../Components/ThirdSection/FeatureCard';
 import Content from '../Components/ThirdSection/Content';
-import leftUpArrow from '../assets/leftUpArr.png';
-import rightUpArrow from '../assets/right-upArr.png';
-import leftDownArrow from '../assets/left-downArr.png';
-import rightDownArrow from '../assets/right-downArr.png';
-import mobile from '../assets/mobile.png';
+import mobile from '../assets/example.png';
 
 const ThirdSection = () => {
   // Features data array
@@ -17,8 +13,6 @@ const ThirdSection = () => {
       description: 'Instantly find dishes using smart search with voice input capabilities for convenient browsing through visually appealing categories.',
       type: 'light',
       position: 'top-left',
-      arrow: leftUpArrow,
-      arrowClass: 'left-up-arrow'
     },
     {
       id: 2,
@@ -26,8 +20,6 @@ const ThirdSection = () => {
       description: 'With a simple tap on "View in AR," customers can place a realistic 3D burger (or any dish) on their table to see the actual size, presentation, and details.',
       type: 'red',
       position: 'bottom-left',
-      arrow: leftDownArrow,
-      arrowClass: 'left-down-arrow'
     },
     {
       id: 3,
@@ -35,8 +27,6 @@ const ThirdSection = () => {
       description: 'Access important details like nutritional information, ingredients, and pricing while interacting with the 3D model.',
       type: 'red',
       position: 'top-right',
-      arrow: rightUpArrow,
-      arrowClass: 'right-up-arrow'
     },
     {
       id: 4,
@@ -44,8 +34,6 @@ const ThirdSection = () => {
       description: 'You can seamlessly switch from one food item to another food item for comparison and exploration.',
       type: 'light',
       position: 'bottom-right',
-      arrow: rightDownArrow,
-      arrowClass: 'right-down-arrow'
     }
   ];
 
@@ -53,7 +41,7 @@ const ThirdSection = () => {
     <section className="third">
       <div className="left-third">
         <div className="heading-third">
-          <h1>See It In Action: Food Industry </h1>
+          <h1>See It In Action: Food Industry</h1>
           <p>Interactive AR Food Models</p>
         </div>
         
@@ -67,11 +55,6 @@ const ThirdSection = () => {
             description={features[0].description}
             type={features[0].type}
           />
-          {/* <img 
-            src={features[0].arrow} 
-            alt="Arrow pointing to mobile" 
-            className={`arrow ${features[0].arrowClass}`} 
-          /> */}
         </div>
         
         <div className={`feature-container ${features[1].position}`}>
@@ -81,11 +64,6 @@ const ThirdSection = () => {
             description={features[1].description}
             type={features[1].type}
           />
-          {/* <img 
-            src={features[1].arrow} 
-            alt="Arrow pointing to mobile" 
-            className={`arrow ${features[1].arrowClass}`} 
-          /> */}
         </div>
       </div>
       
@@ -94,7 +72,7 @@ const ThirdSection = () => {
           <img src={mobile} alt="Mobile application preview" className="mobile-image" />
         </div>
       </div>
-      
+    
       <div className="right-third">
         {/* Right side feature cards */}
         <div className={`feature-container ${features[2].position}`}>
@@ -104,11 +82,6 @@ const ThirdSection = () => {
             description={features[2].description}
             type={features[2].type}
           />
-          {/* <img 
-            src={features[2].arrow} 
-            alt="Arrow pointing to mobile" 
-            className={`arrow ${features[2].arrowClass}`} 
-          /> */}
         </div>
         
         <div className={`feature-container ${features[3].position}`}>
@@ -118,11 +91,6 @@ const ThirdSection = () => {
             description={features[3].description}
             type={features[3].type}
           />
-          {/* <img 
-            src={features[3].arrow} 
-            alt="Arrow pointing to mobile" 
-            className={`arrow ${features[3].arrowClass}`} 
-          /> */}
         </div>
       </div>
     </section>

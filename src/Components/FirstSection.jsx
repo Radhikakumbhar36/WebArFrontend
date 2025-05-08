@@ -1,8 +1,7 @@
-// FirstSection.jsx - Update button to include play icon
 import React from 'react';
 import './FirstSection.css';
 import Navbar from './FirstSection/Navbar';
-import Image from './FirstSection/Image';
+import image from '../assets/home-image.png';
 
 const FirstSection = () => {
   return (
@@ -13,6 +12,9 @@ const FirstSection = () => {
           <div className='heading'>
             Enhance your brand presence with immersive AR experiences
           </div>
+          <div className="first-image">
+            <img className="image" src={image} alt="first_image"/>
+          </div>
           <div className="text">
             <p>"At MAYASABHAXR, we create tailored AR experiences that bring your
               brand to life, offering your customers an interactive and memorable journey."</p>
@@ -20,7 +22,7 @@ const FirstSection = () => {
           <button className='btn'><span>▶</span> See Demo</button>
         </div>
         <div className="right">
-          <Image/>
+          <img className="image" src={image} alt="first_image"/>
         </div>
       </div>
     </>

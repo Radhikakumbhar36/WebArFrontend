@@ -59,15 +59,22 @@
 }
 
 .mobile-img{
-    width:55%;
+    width:80%;
     height: 70%;
-    margin-right:25%;
+    margin-right:5%;
 }
 
 .arrow-img{
     width:30%;
     height:30%;
     margin-top: 35%;
+    display:none;
+}
+.laptop-img{
+    width: 80%;
+    height: 70%;
+    margin-left: 20%;
+    
 }
 
 /* Mobile Responsive Styles */

@@ -1,7 +1,7 @@
 import React from 'react'
 import './FifthSection.css'
-import laptop from '../assets/laptop.png'
-import mobile from '../assets/mobile.png'
+import laptop from '../assets/image.png'
+import mobile from '../assets/home-image.png'
 import Arrow from '../assets/arrow.png'
 const FifthSection = () => {
   return (

@@ -1,40 +1,111 @@
-/* App.css - No major changes needed */
-body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+/* App.css - Enhanced for better responsive experience */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
 }
 
 .Main {
-    height: 100%;
-    width: 100%;
-    background-color: black;
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .main {
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
-    max-width: 1350px;
-    background-color: white;
+  position: relative;
+  width: 100%;
+  max-width: 1350px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
-/* App.css - Mobile */
+/* Section transitions */
+.main > * {
+  width: 100%;
+}
+
+/* Smooth scrolling for anchor links */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Preload transitions */
+.main {
+  opacity: 1;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .main {
+    max-width: 100%;
+  }
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-    
-    .Main {
-        background-color: white;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .main {
-        width: 100%;
-        max-width: 100%;
-        background-color: white;
-    }
+  body {
+    overflow-x: hidden;
+  }
+  
+  .Main {
+    background-color: white;
+    padding: 0;
+  }
+  
+  .main {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+  }
+}
+
+/* Fix for iOS Safari viewport height issues */
+@supports (-webkit-touch-callout: none) {
+  .Main, .main {
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* Print styles for better document printing */
+@media print {
+  .Main {
+    background-color: white;
+  }
+  
+  .main {
+    box-shadow: none;
+    margin: 0;
+    width: 100%;
+  }
+  
 }

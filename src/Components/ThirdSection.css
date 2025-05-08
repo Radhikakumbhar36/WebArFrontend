@@ -87,7 +87,7 @@
 .top-right {
   position: absolute;
   top: 35%;
-  right: 55%;
+  right: 45%;
 }
 
 .bottom-right {
@@ -144,13 +144,7 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* Arrow images */
-.arrow {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  z-index: 1;
-}
+
 
 .left-up-arrow {
   width: 50%;
@@ -223,13 +217,11 @@
     max-width: 300px;
   }
   
-  .arrow {
-    display: none;
-  }
 
   .mobile-image {
     width: 50%;
     height: auto;
+    display: none;
     
   }
 
@@ -270,6 +262,7 @@
   }
   
   .mobile-image {
-    width: 70%;
+    width: 80%;
+    display:none;
   }
 }
